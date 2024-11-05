@@ -1,0 +1,38 @@
+/* .small {
+  height: 88.5vh;
+}
+.large {
+  height: 164.95vh;
+}
+.btns {
+  background: rgba(43, 43, 43, 0.48);
+  color: white;
+  font-weight: 400;
+  letter-spacing: 4px;
+  border-radius: 8px;
+} */
+/* lg */
+* {
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  .small {
+    height: 77.3vh;
+  }
+  .large {
+    height: 164.7vh;
+  }
+  .sm-btns {
+    position: relative;
+    top: 55%;
+  }
+  .lg-btns {
+    position: relative;
+    top: 76.9%;
+  }
+  .custom-btns {
+    position: relative;
+    top: 70.6%;
+  }
+}

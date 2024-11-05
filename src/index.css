@@ -1,0 +1,148 @@
+/* @import url('https://fonts.cdnfonts.com/css/united-kingdom'); */
+@import url(https://db.onlinewebfonts.com/c/1eb6ff10cdf1e50f3fb4af35339fd481?family=United+Kingdom);
+@import url("https://fonts.googleapis.com/css2?family=Danfo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Danfo&family=Montserrat:ital,wght@1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html {
+  @apply font-custom;
+} */
+
+.header_label {
+  font-size: 0.75rem;
+  font-family: "Gilroy-Bold", "United Kingdom";
+  font-style: normal;
+  opacity: 1;
+}
+.subHeader_label {
+  font-size: 0.75rem;
+  font-family: "Gilroy-Medium", "United Kingdom";
+  font-style: normal;
+  /* color: #a29c9c; */
+  opacity: 1;
+}
+.text_label {
+  font-size: 0.75rem;
+  font-family: "Gilroy-Light", "United Kingdom";
+  font-style: normal;
+  opacity: 1;
+}
+.text_label-1 {
+  font-size: 0.7rem;
+  font-family: "Gilroy-Light", "United Kingdom";
+  font-style: normal;
+  opacity: 1;
+}
+.text-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(41, 222, 217, 1),
+    rgba(68, 218, 118, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.text-outline {
+  /* background: linear-gradient(to right, rgba(41,222,217,1), rgba(68,218,118,1)); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px white;
+}
+.bg-blur {
+  backdrop-filter: blur(2px); /* Adjust the blur amount as needed */
+}
+.box1 {
+  background: linear-gradient(94.7deg, #0a85d1 19.1%, #3da5e7 121.46%);
+}
+.box2 {
+  background: linear-gradient(180deg, #ff5f5c 0%, #993937 142.93%);
+}
+.box3 {
+  background: rgb(144, 166, 211);
+  background: linear-gradient(
+    90deg,
+    rgba(144, 166, 211, 1) 0%,
+    rgba(57, 91, 156, 1) 100%
+  );
+}
+.box4 {
+  background: linear-gradient(120.97deg, #ffffff -72.7%, #7069ba 100%);
+}
+.box1-right {
+  background: rgb(207, 168, 136);
+  background: linear-gradient(
+    0deg,
+    rgba(207, 168, 136, 1) 0%,
+    rgba(102, 102, 97, 1) 100%
+  );
+}
+.box2-right {
+  background: linear-gradient(180deg, #bcd6b9 0%, #82a47e 100%);
+}
+.footer-text {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.footer-bottom {
+  border-bottom: 2px solid rgba(54, 54, 54, 1);
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Define a class that uses the keyframes */
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+.mask-gradient {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.hovered-background-1 {
+  background: conic-gradient(
+    from -44.26deg at 50% 50%,
+    #494949 0deg,
+    #010101 360deg
+  );
+}
+.hovered-background-2 {
+  background: conic-gradient(
+    from 225deg at 50% 50%,
+    #494949 0deg,
+    #010101 360deg
+  );
+}
+.hovered-background-3 {
+  background: conic-gradient(
+    from 135deg at 50% 50%,
+    #494949 0deg,
+    #010101 360deg
+  );
+}
+.hovered-background-4 {
+  background: conic-gradient(
+    from 45deg at 50% 50%,
+    #494949 0deg,
+    #010101 360deg
+  );
+}
