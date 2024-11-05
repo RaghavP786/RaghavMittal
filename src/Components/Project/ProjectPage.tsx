@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import data from "../../static/data.ts";
 import { useParams, useNavigate } from "react-router-dom";
 
@@ -227,8 +227,9 @@ const Project = () => {
 };
 
 const ProjectPage = () => {
-  const [clicked, setClicked] = useState<boolean>(false);
-  return <>{clicked ? <Project /> : <Project />}</>;
+  // const [clicked, setClicked] = useState<boolean>(false);
+  // return <>{clicked ? <Project /> : <Project />}</>;
+  return <Project />;
 };
 
 export default ProjectPage;

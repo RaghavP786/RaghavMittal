@@ -15,7 +15,6 @@ interface Props {
 }
 const Card = ({
   id,
-  height,
   colorClass,
   imgSrc,
   heading,
