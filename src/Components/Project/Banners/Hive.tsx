@@ -1,4 +1,3 @@
-import React from "react";
 import Img1 from "../../../assets/P4/hive-logo.png";
 import Img2 from "../../../assets/P4/hive-frame-1.png";
 import Img3 from "../../../assets/P4/hive-frame-2.png";

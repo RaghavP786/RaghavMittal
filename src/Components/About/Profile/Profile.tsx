@@ -1,4 +1,3 @@
-import React from "react";
 import profile from "../../../assets/Profie/profile-img.png";
 import Footer from "../../Footer/Footer";
 const Profile = () => {

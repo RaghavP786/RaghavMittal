@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../Card/Card";
 import Footer from "../../Footer/Footer";
 import img1 from "../../../assets/Project1.png";

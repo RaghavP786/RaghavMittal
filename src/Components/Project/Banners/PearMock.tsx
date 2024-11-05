@@ -1,5 +1,3 @@
-import React from "react";
-
 import BannerLogo from "../../../assets/P2/banner-logo.png";
 import Banner1 from "../../../assets/P2/banner-1.png";
 import Banner2 from "../../../assets/P2/banner-2.png";

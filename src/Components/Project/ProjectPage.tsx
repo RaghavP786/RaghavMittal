@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import data from "../../static/data.ts";
 import { useParams, useNavigate } from "react-router-dom";
 
