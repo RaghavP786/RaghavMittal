@@ -1,15 +1,13 @@
 import Landing from "./Landing/Landing";
 import Nabbar from "../NabBar/Nabbar";
 import NabbarPage from "../NabBar/NabbarPage";
-import { useState } from "react";
+import { useNavbar } from "../../context/NavbarContext";
 const Home = () => {
-  const [clicked, setClicked] = useState(false);
-  function handleClick(): void {
-    setClicked((clicked: boolean) => !clicked);
-  }
+  const { clicked } = useNavbar();
+
   return (
     <>
-      <Nabbar handleClick={handleClick} clicked={clicked} />
+      <Nabbar />
       {clicked ? <NabbarPage /> : <Landing />}
     </>
   );

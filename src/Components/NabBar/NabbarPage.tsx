@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useNavbar } from "../../context/NavbarContext";
+
 type HoverIndex = number | null;
 
 const NabbarPage = () => {
+  const { handleClick } = useNavbar();
   const [hoveredIndex, setHoveredIndex] = useState<HoverIndex>(null);
   const navigate = useNavigate();
   // Handle mouse enter and leave events with proper types
@@ -13,12 +16,18 @@ const NabbarPage = () => {
   const handleMouseLeave = () => {
     setHoveredIndex(null);
   };
-  const handleClick = (name: string) => {
+  const handleOnClick = (name: string) => {
     name = name.toLowerCase();
+
     if (name == "resume") {
       window.open(
         "https://drive.google.com/file/d/1mBKcrqBn29IXQVTjq15jyoIBc-cbPhbE/view?usp=sharing"
       );
+      return;
+    }
+    if (name == "home") {
+      handleClick();
+      navigate("/");
       return;
     }
     navigate(`/${name}`);
@@ -37,7 +46,7 @@ const NabbarPage = () => {
             } inline-flex items-end text-[3rem] font-montserrat font-bold h-full w-[24.5%] border-l-2 border-bars leading-none`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
-            onClick={() => handleClick(item)}
+            onClick={() => handleOnClick(item)}
           >
             {item}
           </div>

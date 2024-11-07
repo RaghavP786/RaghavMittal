@@ -48,6 +48,7 @@ const data = [
     Img3: P1Img3,
     lineColor: "#00A5EC",
     border: "",
+    figmaLink: "",
   },
 
   {

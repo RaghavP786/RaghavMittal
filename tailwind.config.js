@@ -26,7 +26,7 @@ export default {
       keyframes: {
         "slide-up": {
           "0%": { top: "110%" },
-          "100%": { top: "-14%" },
+          "100%": { top: "-13.5%" },
         },
         "lg-slide-up": {
           "0%": { top: "110%" },

@@ -7,6 +7,9 @@ import PearMock from "./Banners/PearMock";
 import Vance from "./Banners/Vance";
 import Hive from "./Banners/Hive.js";
 import VerticalNabbar from "./VerticalNabbar/VerticalNabbar.tsx";
+import { useNavbar } from "../../context/NavbarContext.tsx";
+import NabbarPage from "../NabBar/NabbarPage.tsx";
+import Nabbar from "../NabBar/Nabbar.tsx";
 const Project = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
@@ -227,9 +230,19 @@ const Project = () => {
 };
 
 const ProjectPage = () => {
-  // const [clicked, setClicked] = useState<boolean>(false);
-  // return <>{clicked ? <Project /> : <Project />}</>;
-  return <Project />;
+  const { clicked } = useNavbar();
+  return (
+    <>
+      {clicked ? (
+        <>
+          <Nabbar />
+          <NabbarPage />
+        </>
+      ) : (
+        <Project />
+      )}
+    </>
+  );
 };
 
 export default ProjectPage;
