@@ -82,6 +82,27 @@ const Landing = () => {
               </div>
               <div>
                 <Card
+                  id={4}
+                  height={"77.5vh"}
+                  colorClass={"box3"}
+                  imgSrc={img3}
+                  heading={"CALENSYNC"}
+                  desc={"SOLUTION FOR EFFICIENT TIME MANAGEMENT"}
+                  imgSmall={false}
+                  btn1={"CASE-STUDY"}
+                  btn2={"SELF-INITIATED"}
+                  islg={false}
+                />
+                <div style={{ color: "white" }} className="pt-3 pb-3">
+                  <h2 className="font-custom text-[1.1rem]">CALENSYNC</h2>
+                  <p className="font-montserrat text-[0.8rem]">
+                    One step calendar solution for time management.{" "}
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <Card
                   id={1}
                   height={"77.5vh"}
                   colorClass={"box2"}
@@ -97,29 +118,6 @@ const Landing = () => {
                   <h2 className="font-custom text-[1.1rem]">PEARMOCK</h2>
                   <p className="font-montserrat text-[0.8rem]">
                     One step solution for product managers to excel.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <Card
-                  id={4}
-                  height={"77.5vh"}
-                  colorClass={"box3"}
-                  imgSrc={img3}
-                  heading={"PORTFOLIO"}
-                  desc={"MY PREVIOUSLY DESIGNED PLAYFUL PORFOLIO"}
-                  imgSmall={false}
-                  btn1={"PORTFOLIO"}
-                  btn2={"SELF-INITIATED"}
-                  islg={false}
-                />
-                <div style={{ color: "white" }} className="pt-3 pb-3">
-                  <h2 className="font-custom text-[1.1rem]">
-                    Past Playful Portfolio
-                  </h2>
-                  <p className="font-montserrat text-[0.8rem]">
-                    My previously designed portfolio with some cool interactions
                   </p>
                 </div>
               </div>

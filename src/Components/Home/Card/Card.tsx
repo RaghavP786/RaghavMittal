@@ -29,8 +29,7 @@ const Card = ({
   function handleClick() {
     if (id == 4) {
       window.open(
-        "https://www.figma.com/proto/ytLbo5ECa2XU2LlhEEvSjI/Untitled?page-id=0%3A1&node-id=0-736&starting-point-node-id=0%3A736",
-        "_blank"
+        "https://www.figma.com/proto/wNyu8l5tvvmRkiVknbIJLA/CALENSYNC?node-id=1-552&node-type=frame&t=F4I8cJlZQHDTZ8oE-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
       );
     } else if (id == 5) {
       window.open(
@@ -122,7 +121,7 @@ const Card = ({
               background: "rgba(43, 43, 43, 0.48)",
               color: "white",
               fontWeight: "400",
-              letterSpacing: "4px",
+              letterSpacing: "2.5px",
               borderRadius: "8px",
             }}
           >
@@ -134,7 +133,7 @@ const Card = ({
               background: "rgba(43, 43, 43, 0.48)",
               color: "white",
               fontWeight: "400",
-              letterSpacing: "4px",
+              letterSpacing: "2px",
               borderRadius: "8px",
             }}
           >
@@ -157,7 +156,13 @@ const Card = ({
           `}
         >
           <img
-            className={`${id == 3 ? "w-[70%] ml-14 h-[90%]" : "w-[100%]"}`}
+            className={`${
+              id == 3
+                ? "w-[70%] ml-14 h-[90%]"
+                : id == 4
+                ? "w-[65%]  h-[110%]"
+                : "w-[100%]"
+            }`}
             src={imgSrc}
             alt=""
           />
