@@ -116,24 +116,22 @@ const Card = ({
           `}
         >
           <div
-            className="px-4 py-3 font-montserrat"
+            className="px-4 py-2 font-montserrat"
             style={{
               background: "rgba(43, 43, 43, 0.48)",
               color: "white",
-              fontWeight: "400",
-              letterSpacing: "2.5px",
+              fontWeight: "500",
               borderRadius: "8px",
             }}
           >
             {btn1}
           </div>
           <div
-            className="px-4 py-3 font-montserrat"
+            className="px-4 py-2 font-montserrat"
             style={{
               background: "rgba(43, 43, 43, 0.48)",
               color: "white",
-              fontWeight: "400",
-              letterSpacing: "2px",
+              fontWeight: "500",
               borderRadius: "8px",
             }}
           >
