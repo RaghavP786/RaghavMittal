@@ -31,6 +31,7 @@ const NabbarPage = () => {
       return;
     }
     navigate(`/${name}`);
+    handleClick();
   };
   return (
     <div
