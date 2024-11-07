@@ -17,7 +17,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       fontWeight: {
-        normal : 300,
+        normal: 300,
         regular: 400,
         semibold: 600,
         bold: 700,
@@ -28,8 +28,16 @@ export default {
           "0%": { top: "110%" },
           "100%": { top: "-15.5%" },
         },
+        "lg-slide-up": {
+          "0%": { top: "110%" },
+          "100%": { top: "5%" },
+        },
         "slide-down": {
-          "0%": { top: "-15.5%" },
+          "0%": { top: "5%" },
+          "100%": { top: "110%" },
+        },
+        "lg-slide-down": {
+          "0%": { top: "10%" },
           "100%": { top: "110%" },
         },
         "heading-up": {
@@ -40,6 +48,14 @@ export default {
           "0%": { top: "0" },
           "100%": { top: "32.5%" },
         },
+        "lg-heading-up": {
+          "0%": { top: "32%" },
+          "100%": { top: "8%" },
+        },
+        "lg-heading-down": {
+          "0%": { top: "8%" },
+          "100%": { top: "32%" },
+        },
         "desc-down": {
           "0%": { top: "30%" },
           "100%": { top: "80%" },
@@ -47,6 +63,14 @@ export default {
         "desc-up": {
           "0%": { top: "80%" },
           "100%": { top: "30%" },
+        },
+        "lg-desc-down": {
+          "0%": { top: "8%" },
+          "100%": { top: "32%" },
+        },
+        "lg-desc-up": {
+          "0%": { top: "32%" },
+          "100%": { top: "8%" },
         },
         "btn-down": {
           "0%": { top: "55%" },
@@ -76,10 +100,16 @@ export default {
       animation: {
         "slide-up": "slide-up 0.5s ease-out forwards",
         "slide-down": "slide-down 0.5s ease-out forwards",
+        "lg-slide-up": "lg-slide-up 0.5s ease-out forwards",
+        "lg-slide-down": "lg-slide-down 0.5s ease-out forwards",
         "heading-up": "heading-up 0.5s ease-out forwards",
         "heading-down": "heading-down 0.5s ease-out forwards",
+        "lg-heading-up": "lg-heading-up 0.5s ease-out forwards",
+        "lg-heading-down": "lg-heading-down 0.5s ease-out forwards",
         "desc-down": "desc-down 0.5s ease-in forwards",
         "desc-up": "desc-up 0.5s ease-in forwards",
+        "lg-desc-down": "lg-desc-down 0.5s ease-out forwards",
+        "lg-desc-up": "lg-desc-up 0.5s ease-out forwards",
         "btn-down": "btn-down 0.5s ease-in forwards",
         "btn-up": "btn-up 0.5s ease-in forwards",
         "lg-btn-up": "lg-btn-up 0.5s ease-in forwards",

@@ -55,10 +55,16 @@ const Card = ({
           className={`info flex flex-col items-center relative ${
             islg ? "top-[80.5%]" : "top-[32.5%]"
           } ${
-            !islg && isHovered
-              ? "group-hover:animate-heading-up"
-              : "animate-heading-down"
-          }`}
+            !islg
+              ? isHovered
+                ? "group-hover:animate-heading-up"
+                : "animate-heading-down"
+              : isHovered
+              ? "group-hover:animate-lg-heading-up"
+              : "animate-lg-heading-down"
+          }
+          
+          `}
         >
           <h1
             className="text-[5.5vw] font-poppins font-bold min-w-[65%] max-w-[75%] text-center"
@@ -69,10 +75,15 @@ const Card = ({
         </div>
         <div
           className={`info flex flex-col items-center relative top-[30%] ${
-            !islg && isHovered
-              ? "group-hover:animate-desc-down"
-              : "animate-desc-up"
-          }`}
+            !islg
+              ? isHovered
+                ? "group-hover:animate-desc-down"
+                : "animate-desc-up"
+              : isHovered
+              ? "group-hover:animate-lg-desc-up"
+              : "animate-lg-desc-down"
+          }
+          `}
         >
           <span
             className={`${
@@ -131,15 +142,25 @@ const Card = ({
           </div>
         </div>
         <div
-          className={`img-wrappper ${imgSmall ? "w-[35%]" : "w-[90%]"} ${
-            imgSmall ? "h-[77%]" : "h-[77%]"
-          } relative top-[100%] m-auto ${
+          className={`flex justify-center img-wrappper ${
+            imgSmall ? "w-[35%]" : "w-[90%]"
+          } ${imgSmall ? "h-[77%]" : "h-[77%]"} relative top-[100%] m-auto ${
             !islg && isHovered
               ? "group-hover:animate-slide-up"
               : "animate-slide-down"
-          }`}
+          } 
+           ${
+             islg && isHovered
+               ? "group-hover:animate-lg-slide-up"
+               : "animate-lg-slide-down"
+           }
+          `}
         >
-          <img className="w-[100%] h-[100%]" src={imgSrc} alt="" />
+          <img
+            className={`${id == 3 ? "w-[70%] ml-14 h-[90%]" : "w-[100%]"}`}
+            src={imgSrc}
+            alt=""
+          />
         </div>
       </div>
       {/* <div className='max-h-[5vh] max-w-[800px]' style={{background : "black", color:"white"}}>

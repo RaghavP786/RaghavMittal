@@ -15,6 +15,12 @@ const NabbarPage = () => {
   };
   const handleClick = (name: string) => {
     name = name.toLowerCase();
+    if (name == "resume") {
+      window.open(
+        "https://drive.google.com/file/d/1mBKcrqBn29IXQVTjq15jyoIBc-cbPhbE/view?usp=sharing"
+      );
+      return;
+    }
     navigate(`/${name}`);
   };
   return (
@@ -26,7 +32,7 @@ const NabbarPage = () => {
         {["HOME", "ABOUT", "RESUME", "EXTRAS"].map((item, index) => (
           <div
             key={index}
-            className={`${
+            className={`cursor-pointer	${
               index == 0 ? "ml-[2.5%]" : ""
             } inline-flex items-end text-[3rem] font-montserrat font-bold h-full w-[24.5%] border-l-2 border-bars leading-none`}
             onMouseEnter={() => handleMouseEnter(index)}

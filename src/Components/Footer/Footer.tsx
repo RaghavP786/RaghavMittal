@@ -1,6 +1,7 @@
 import instagram from "../../assets/instagram.png";
 import linkedin from "../../assets/linkedin (1).png";
 import dribble from "../../assets/dribbble.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -31,15 +32,24 @@ const Footer = () => {
         style={{ background: "black" }}
       >
         <div className="w-[23%] max-h-[10%] mt-5 flex justify-between items-center">
-          <a className="max-h-[100%]">
+          <Link
+            className="max-h-[100%]"
+            to="https://dribbble.com/raghav_mittal_"
+          >
             <img className="max-h-[100%]" src={dribble} alt="" />
-          </a>
-          <a className="max-h-[100%]">
+          </Link>
+          <Link
+            className="max-h-[100%]"
+            to="https://www.linkedin.com/in/raghav-mittal-245586247/"
+          >
             <img className="max-h-[100%]" src={linkedin} alt="" />
-          </a>
-          <a className="h-[100%]">
+          </Link>
+          <Link
+            className="h-[100%]"
+            to="https://www.instagram.com/raghav_mittal__28/"
+          >
             <img className="max-h-[100%]" src={instagram} alt="" />
-          </a>
+          </Link>
         </div>
       </div>
     </>

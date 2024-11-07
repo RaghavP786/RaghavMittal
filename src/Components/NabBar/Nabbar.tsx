@@ -13,11 +13,11 @@ const Nabbar: React.FC<NavbarProps> = ({ handleClick, clicked }) => {
       onClick={handleClick}
     >
       <div className="h-full flex gap-7 justify-between items-center">
-        <h1 className="font-custom text-[2.3rem] ml-10 h-full aspect-square text-center">
+        <h1 className="cursor-pointer	font-custom text-[2.3rem] ml-10 h-full aspect-square text-center">
           {clicked ? "RAGHAV" : "RM"}
         </h1>
         <div
-          className="mr-11 h-full rounded-full aspect-square text-[2rem] font-bold text-center"
+          className=" cursor-pointer mr-11 h-full rounded-full aspect-square text-[2rem] font-bold text-center"
           style={{ background: "white", color: "black" }}
         >
           {clicked ? <XMarkIcon /> : ""}
