@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import data from "../../static/data.ts";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 
 import InternshalaBanner from "./Banners/InternshalaBanner";
 import PearMock from "./Banners/PearMock";
@@ -177,8 +177,14 @@ const Project = () => {
                       </ul>
                     </div>
                     <div
-                      className={`absolute bottom-[3%] w-full ${
-                        content.Img2 === null ? "" : "h-[20%]"
+                      className={`absolute ${
+                        id == "3" ? "bottom-[-1%]" : "bottom-[3%]"
+                      } w-full ${
+                        content.Img2 === null
+                          ? ""
+                          : id == "3"
+                          ? "h-[30%]"
+                          : "h-[20%]"
                       }`}
                     >
                       {content.Img2 && (
@@ -205,15 +211,16 @@ const Project = () => {
                   className="relative w-[11%] h-full"
                   style={{ borderRadius: "12px" }}
                 >
-                  <div
+                  <Link
                     className="ml-[-0.1rem] mr-[0.2rem] absolute bottom-[0.7%] p-3 rounded-md text-[0.9rem] font-montserrat font-bold"
                     style={{
                       background: "#1E1E1E",
                       color: `${content.lineColor}`,
                     }}
+                    to={content.figmaLink}
                   >
                     view full design file
-                  </div>
+                  </Link>
                   <img
                     className="w-full h-full object-cover"
                     src={content.Img3}

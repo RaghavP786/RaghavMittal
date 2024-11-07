@@ -48,7 +48,8 @@ const data = [
     Img3: P1Img3,
     lineColor: "#00A5EC",
     border: "",
-    figmaLink: "",
+    figmaLink:
+      "https://www.figma.com/design/vu8H4N08J3f2ks76Lf3xTl/INTERNSHALA?node-id=0-1",
   },
 
   {
@@ -79,6 +80,8 @@ const data = [
 
     lineColor: "#B1C923",
     border: "1px solid #FFFFFF66",
+    figmaLink:
+      "https://www.figma.com/design/R9aYuTz99YS9yj1J9wqs2o/PEARKMOCK?node-id=0-1&node-type=canvas&t=8YZs84g9dAKJqe74-0",
   },
 
   {
@@ -113,6 +116,8 @@ const data = [
 
     lineColor: "#9E96D8",
     border: "1px solid #FFFFFF66",
+    figmaLink:
+      "https://www.figma.com/proto/OJMog4ImBdK0a4Gd93wbPR/VANCE?node-id=17-1239&t=BjbCWKO5JqNuRHPr-1&scaling=min-zoom&content-scaling=fixed&page-id=17%3A189&starting-point-node-id=17%3A1239",
   },
 
   {
@@ -140,6 +145,8 @@ const data = [
 
     lineColor: "#D9896A",
     border: "1px solid #FFFFFF66",
+    figmaLink:
+      "https://www.figma.com/proto/C9xabAH16XjETuxoQXtNXu/HOMEHIVE?page-id=576%3A4994&type=design&node-id=576-4995&viewport=3034%2C358%2C0.1&t=ZxP9jJLV3pGSG6wJ-1&scaling=contain&starting-point-node-id=576%3A4995",
   },
 ];
 
