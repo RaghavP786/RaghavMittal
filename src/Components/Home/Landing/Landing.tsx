@@ -6,6 +6,7 @@ import img3 from "../../../assets/Project3.png";
 import img4 from "../../../assets/Project4.png";
 import img5 from "../../../assets/Project5.png";
 import img6 from "../../../assets/Project6.png";
+import CardDes from "../Card/CardDes";
 
 const Landing = () => {
   return (
@@ -73,12 +74,10 @@ const Landing = () => {
                   btn2={"INTERNSHIP"}
                   islg={false}
                 />
-                <div style={{ color: "white" }} className="pt-3 pb-3">
-                  <h2 className="font-custom text-[1.1rem]">INTERNSHALA</h2>
-                  <p className="font-montserrat text-[0.8rem]">
-                    One step solution for internship and job finding{" "}
-                  </p>
-                </div>
+                <CardDes
+                  heading="INTERNSHALA"
+                  description="One step solution for internship and job finding."
+                />
               </div>
               <div>
                 <Card
@@ -93,12 +92,10 @@ const Landing = () => {
                   btn2={"SELF-INITIATED"}
                   islg={false}
                 />
-                <div style={{ color: "white" }} className="pt-3 pb-3">
-                  <h2 className="font-custom text-[1.1rem]">CALENSYNC</h2>
-                  <p className="font-montserrat text-[0.8rem]">
-                    One step calendar solution for time management.{" "}
-                  </p>
-                </div>
+                <CardDes
+                  heading="CALENSYNC"
+                  description="One step calendar solution for time management."
+                />
               </div>
 
               <div>
@@ -114,12 +111,10 @@ const Landing = () => {
                   btn2={"INTERNSHIP"}
                   islg={false}
                 />
-                <div style={{ color: "white" }} className="pt-3 pb-3">
-                  <h2 className="font-custom text-[1.1rem]">PEARMOCK</h2>
-                  <p className="font-montserrat text-[0.8rem]">
-                    One step solution for product managers to excel.
-                  </p>
-                </div>
+                <CardDes
+                  heading="PEARMOCK"
+                  description="One step solution for product managers to excel."
+                />
               </div>
 
               <div>
@@ -135,12 +130,10 @@ const Landing = () => {
                   btn2={"SELF-INITIATED"}
                   islg={false}
                 />
-                <div style={{ color: "white" }} className="pt-3 pb-3">
-                  <h2 className="font-custom text-[1.1rem]">VANCE</h2>
-                  <p className="font-montserrat text-[0.8rem]">
-                    One step solution for NRI banking.{" "}
-                  </p>
-                </div>
+                <CardDes
+                  heading="VANCE"
+                  description="One step solution for NRI banking."
+                />
               </div>
             </div>
             <div className="flex flex-col">
@@ -157,12 +150,10 @@ const Landing = () => {
                   btn2={"SELF-INITIATED"}
                   islg={true}
                 />
-                <div style={{ color: "white" }} className="pt-3 pb-3">
-                  <h2 className="font-custom text-[1.1rem]">HOMEHIVE</h2>
-                  <p className="font-montserrat text-[0.8rem]">
-                    One step solution for rental property management.{" "}
-                  </p>
-                </div>
+                <CardDes
+                  heading="HOMEHIVE"
+                  description="One step solution for rental property management."
+                />
               </div>
 
               <div>
@@ -178,14 +169,10 @@ const Landing = () => {
                   btn2={"FREE-LANCE"}
                   islg={true}
                 />
-                <div style={{ color: "white" }} className="pt-3 pb-5">
-                  <h2 className="font-custom text-[1.1rem]">
-                    Nutrition.by.Lovneet
-                  </h2>
-                  <p className="font-montserrat text-[0.8rem]">
-                    One step solution for all health conscious people.
-                  </p>
-                </div>
+                <CardDes
+                  heading="Nutrition.by.Lovneet"
+                  description="One step solution for all health conscious people."
+                />
               </div>
             </div>
           </div>
